@@ -1,0 +1,379 @@
+body {
+	background: url(pictures_for_whitesquare/fon.png) repeat;
+	font-family: 'Oswald';
+	margin: 0;
+}
+#block {
+	width: 960px;
+	margin: 0 auto;
+}
+/**** HEADER ****/
+.header {
+	line-height: 60px;
+}
+.header form {
+	float: right;
+	margin-top: 15px;
+}
+.search-field {
+	padding-left: 10px;
+	font: Tahoma 12px;
+	text-transform: capitalize;
+	line-height: 20px;
+	text-align: left;
+	height: 32px;
+	width: 159px;
+	background: #f3f3f3;
+	border: 1px solid #e7e7e7;
+	color: #b2b2b2;
+	float: right;
+}
+.submit-field {
+	float: right;
+	height: 32px;
+	cursor: pointer;
+	width: 42px;
+	background: #29c5e6;
+	color: #fefefe;
+	text-transform: uppercase;
+	border: 0;
+}
+.header img {
+	margin: 15px 0;
+}
+/**** MAIN-MENU****/
+
+.main-menu table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+	padding: 0;
+	background: #f3f3f3;
+}
+table td {
+	padding: 0;
+}
+table td .menu {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	padding: 5px 31px;
+	text-decoration: none;
+	color: #b2b2b2;
+	display: block
+}
+table td:first-child .menu {
+	border-left: 1px solid #e7e7e7;
+}
+table td:last-child .menu {
+	border-right: 1px solid #e7e7e7;
+}
+table td .menu:hover,
+table td:first-child .menu:hover,
+table td:last-child .menu:hover {
+	border-color: #29c5e6;
+	background: #29c5e6;
+	color: #fefefe;
+}
+/*** banner-wrapper***/
+	/* banner*/
+.banner-wrapper {
+	margin: 28px 0 0 0;
+}
+.banner{
+	width: 100%;
+	height: 280px;
+	background: #e2e2e2;
+	padding: 38px 40px 0;
+	box-sizing: border-box;
+}
+.title {
+	font-size: 42.13px;
+	font-weight: lighter;
+	color: #5a5a5a;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 26px;
+}
+.etiam {
+	padding-left: 4px;
+	font-size: 20px;
+	font-weight: lighter;
+	color: #acacac;
+	margin: 0;
+	line-height: 51px;
+}
+	/*banner-menu*/
+.banner-menu {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #e7e7e7;
+	background: #f3f3f3;
+}
+.banner-menu a {
+	color: #8f8f8f;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 50px;
+	margin: 0 16px;
+}
+span {
+	color: #ffffff;
+	line-height: 24px;
+	background: #8f8f8f;
+	margin: 0 15px;
+	padding: 0 12px;
+}
+.banner-menu a:hover {
+	color: #44cbe8;
+}
+.banner-menu a:hover span {
+	background: #29c5e6;
+}
+
+/**** word****/
+.information {
+	height: 181px;
+	width: 100%;
+	margin-top: 38px;
+	box-sizing: border-box;
+}
+.info {
+	float: left;
+	margin: 0 10px;
+	padding-top: 40px;
+	position: relative;
+	background: url(pictures_for_whitesquare/line.jpg)repeat-x;
+}
+.topic {
+	line-height: 16px;
+	position: absolute;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #868686;
+	padding:0 23px;
+	background: url(pictures_for_whitesquare/fon.png);
+	top: 0;
+	left: 0;
+}
+.topic:before {
+	position: absolute;
+	content: '';
+	background: #29c5e6;
+	width: 15px;
+	height: 15px;
+	left: 0;
+	top: 0;
+}
+.border {
+	float: left;
+	border: 1px solid #c9c9c9;
+	height: 140px;
+	background: transparent;
+	padding: 1px;
+	box-sizing: border-box;
+	margin-right: 20px;
+}
+.bgcolor {
+	background: #e2e2e2;
+	width: 136px;
+	height: 136px;
+}
+.info .text {
+	width: 300px;
+	float: left;
+	color: #8f8f8f;
+	font-size: 12px;
+	font-family: Tahoma;
+	position: relative;
+	text-align: justify;
+}
+.info a {
+	font-size: 12px;
+	font-family: Tahoma;
+	text-decoration: none;
+	color: #525252;
+	text-decoration: underline;
+	line-height: 43px;
+	display: block;
+}
+.speech {
+	float: left;
+	width: 300px;
+	color: #8f8f8f;
+	font-size: 12px;
+	font-family: Tahoma;
+	font-style: italic;
+	position: relative;
+	text-align: justify;
+}
+.who {
+	line-height: 43px;
+	font-size: 12px;
+	font-family: Tahoma;
+	color: #525252;
+}
+
+/*** services***/
+
+.services {
+	margin-top: 38px;
+	width: 100%;
+	height: 175px;
+}
+.our-teams {
+	float: left;
+	width: 300px;
+	margin: 0 10px;
+	text-align: justify;
+	position: relative;
+	padding: 40px 0 0 0;
+	background: url(pictures_for_whitesquare/line.jpg)repeat-x;
+}
+.pic_br {
+	float: left;
+	border: 1px solid #c9c9c9;
+	height: 41px;
+	width: 40px;
+	background: transparent;
+	padding: 1px;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.pic_bg {
+	background: #e2e2e2;
+	width: 36px;
+	height: 37px;
+}
+.ips {
+	margin-bottom: 10px;
+}
+.ips .text {
+	font-family: Tahoma;
+	color: #8f8f8f;
+	font-size: 11px;
+	font-family: Tahoma;
+	text-align: justify;
+	margin: 0;
+}
+.ips .title {
+	font-family: Tahoma;
+	margin: 0;
+	line-height: 11px;
+	color: #525252;
+	font-size: 11px;
+	font-family: Tahoma;
+	text-transform: uppercase;
+}
+
+/**** clients****/
+.clients {
+	position: relative;
+	margin: 25px 10px;
+	background: url(pictures_for_whitesquare/line.jpg)repeat-x;
+}
+.clients img {
+	padding-top: 40px;
+	margin: 0 auto;
+	display: block;
+}
+/***** footer****/
+.footer {
+	margin-top: 50px;
+	width: 100%;
+	min-width: 960px;
+	background: #7e7e7e;
+}
+.footer-item {
+	height: 110px;
+	width: 960px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-top: 10px;
+}
+.twitter {
+	margin: 0 10px;
+	width: 300px;
+	float: left;
+}
+.sitemap,
+.networks {
+	margin: 0 10px;
+	width: 150px;
+	float: left;
+}
+.end {
+	margin: 0 10px;
+	width: 220px;
+	float: right;
+}
+.networks .title,
+.sitemap .title,
+.twitter .title {
+	margin: 0;
+	font-weight: lighter;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 0;
+	border-bottom: 1px solid #919191;
+}
+.twitter a {
+	color: #a7a2a2;
+	font-family: Tahoma;
+	font-size: 11px;
+	text-decoration: underline;
+	line-height: 20px;
+	display: block;
+}
+.twitter .text {
+	color: #cfcfcf;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin: 0;
+}
+.footer-menu-lf {
+	width: 35px;
+	float: left;
+	margin-right: 41px;
+}
+.footer-menu-lf .menu,
+.footer-menu-rg .menu {
+	text-transform: capitalize;
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+	color: #dbdbdb;
+}
+.footer-menu-rg {
+	float: left;
+	width: 35px;
+}
+.network-max a, .network-small a {
+	text-decoration: none;
+}
+.network-max {
+	margin: 12px 0 0 0;
+}
+.network-max a {
+	margin-right: 10px;
+}
+.network-small a {
+	margin-right: 7px;
+}
+.end img {
+	float: right;
+	margin-top: 25px;
+}
+.pcklab .text,
+.pcklab a {
+	color: #cfcfcf;
+	font-family: Tahoma;
+	font-size: 10px;
+	text-align: right;
+	display: inline-block;
+}
