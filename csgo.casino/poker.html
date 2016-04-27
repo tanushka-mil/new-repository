@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<title>Poker</title>
+		<link href="css/main.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/jquery.ui-slider.css">
+    		<!-- <script src="js/jquery-1.8.3.js"></script> -->
+   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   		<script src="js/jquery.ui-slider.js"></script>
+   		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="modal" id="new_gamer">
+			<div class="main-win">
+				<div class="count-credits">
+					<p>Доступно условных фишек 7258</p>
+				</div>
+				<form>
+					<div class="buy-in space-between">
+						<p>Сумма бай-ина:</p>
+						<input type="text">
+					</div>
+					<div class="scroll-buy-in space-between" >
+						<button id="minimum">Мин</button>
+						<div class="renge-slider range-main">
+							<div class="ui-slider-control"></div>
+						</div>
+						<button id="maximum">Макс</button>
+					</div>
+					<div class="ctrl-btn space-between">
+						<button id="okay">OK</button>
+						<button id="cencel">Отмена</button>
+					</div>
+				</form>
+				<div class="colorize-box-back">
+					<div class="colorize-box"></div>
+				</div>
+			</div>
+		</div>
+		 <div id="modal-comb" class="modal-combination">
+        			<span id="close-combination"></span>
+        			<div class="items flex-wrap">
+          				<div class="combine card-flesh-royal">
+					<div class="card-name">
+						<p>Флеш рояль</p>
+					</div>
+            				</div>
+          				<div class="combine card-street-flesh">
+            					<div class="card-name">
+              						<p>Стрит флеш</p>
+				           	</div>
+				</div>
+          				<div class="combine card-kare">
+            					<div class="card-name">
+              						<p>Каре</p>
+            					</div>
+          				</div>
+          				<div class="combine card-fullhouse">
+            					<div class="card-name">
+              						<p>Фул-хаус</p>
+            					</div>
+          				</div>
+          				<div class="combine card-flesh">
+            					<div class="card-name">
+              						<p>Флеш</p>
+            					</div>
+          				</div>
+          				<div class="combine card-street">
+            					<div class="card-name">
+              						<p>Стрит</p>
+            					</div>
+          				</div>
+          				<div class="combine card-trips">
+            					<div class="card-name">
+              						<p>Трипс</p>
+            					</div>
+          				</div>
+          				<div class="combine card-two-pairs">
+            					<div class="card-name">
+              						<p>Две пары</p>
+            					</div>
+          				</div>
+         				<div class="combine card-pair">
+            					<div class="card-name">
+              						<p>Пара</p>
+            					</div>
+          				</div>
+          				<div class="combine card-supreme">
+            					<div class="card-name">
+              						<p>Старшая карта</p>
+            					</div>
+          				</div>
+          			</div>
+          		</div>
+		<div class="header">
+			<a class="logo" href="main.html"></a>
+			<div class="header-item">
+				<button class="button music"></button>
+				<select class="button leng">
+					<option>RU</option>
+					<option>EN</option>
+				</select> 
+				<button id="click-it" class="login"> Авторизация</button>
+			</div>
+		</div>
+		<div class="main-menu">
+			<ul class="menu">
+				<li class="menu-main"><a href="main.html">Лобби</a></li>
+				<li class="menu-players"><a href="top_gamers.html">Топ игроков</a></li>
+				<li class="menu-rule"><a href="rulls.html">Правила</a></li>
+				<li class="menu-about"><a href="about.html">О сайте</a></li>
+			</ul>
+		</div>
+		<div class="game">
+			<div class="game-info">
+				<div class="number">
+					<a href="">Игра: #156</a>
+				</div>
+			</div>
+			<div class="game-table">
+				<div class="first-line">
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+				</div>
+				<div class="second-line">
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+					<div class="table-cards">
+						<div class="rate-item">600</div>
+						<div class="cards">
+							<div class="card-item"><img src="css/img/jack.png"></div>
+							<div class="card-item"><img src="css/img/jack.png"></div>
+							<div class="card-item"><img src="css/img/jack.png"></div>
+							<div class="card-item"><img src="css/img/jack.png"></div>
+							<div class="card-item"><img src="css/img/jack.png"></div>
+						</div>
+					</div>
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+				</div>
+				<div class="therd-line">
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+					<div class="player me">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+					<div class="player">
+						<div class="ava">
+							<img src="css/img/photo1.png">
+							<div class="statistics">
+								<div  class="statistic-item">
+									<div class="statistics-item">
+										<p>кол-во сыгранных рук</p>
+										<p>кол-во выигранных рук</p>
+										<p>суммы выигрышей</p>
+									</div>
+									<div class="statistic">
+										<p>12</p>
+										<p>6</p>
+										<p>5</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="person">
+							<p>Люда_МАКС</p>
+							<p class="balance-user">23$</p>
+						</div>
+						<div class="progress-bar blue stripes">
+	    						<span style="width: 40%">
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    							<div class="strings"></div>
+	    						</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chats game-page">
+			<div class="chats-game">
+				<div class="stop">
+				            	<form>
+				                	<input type="checkbox" data-checkId="1" id="c1" name="cc" />
+				                	<label for="c1">Пауза<span></span></label>
+				           	 </form>
+				</div>
+				<div  class="chats-item">
+					<ul>
+						<li><a class="active" id="main" href="#tabs-4">общий чат</a></li>
+						<li><a id="privet" href="#tabs-5">Локальная</a></li>
+					</ul>
+					<div class="chat" id="tabs-4">
+						<div class="massages">
+							<p class="user-name">Карина:</p>
+							<p class="massage">Вітаємо на PokerStars, де ви знайдете більше ігор та турнірів.</p>
+						</div>
+						<div class="massages me">
+							<p class="user-name">Витек_манифест:</p>
+							<p class="massage">блабла кар ігор та турнірів. </p>
+						</div>
+						<div class="massages">
+							<p class="user-name">МАКС БАРСКИХ:</p>
+							<p class="massage">PokerStars, де ви знайдете більше ігор та турнірів. </p>
+						</div>
+						<div class="winer">
+							Победитель турнира Дарина_MIMI
+							<span></span>
+						</div>
+						<input type="text" placeholder="Сообщение"></input>
+					</div>
+					<div class="chat privat-chat" id="tabs-5"></div>
+				</div>
+			</div>
+			<!--<div class="folders">
+				<div class="folders-item">
+					<div class="check">
+						<form>
+					                	<input type="checkbox" data-checkId="2" id="c2" name="cc2" />
+					                	<label for="c2">Чек<span></span></label>
+					            </form>
+					</div>
+					<div class="fold">
+						<form>
+					                	<input type="checkbox" data-checkId="3" id="c3" name="cc3" />
+					                	<label for="c3">Фолд<span></span></label>
+					               </form>
+					</div>
+				           	<div class="fold-check">
+				           		<form>
+					                	<input type="checkbox" data-checkId="4" id="c4" name="cc4" />
+					                	<label for="c4">Чек/ фолд<span></span></label>
+					               </form>
+				           	</div>
+				           	<button id="combination">Комбинации</button>
+				</div>
+			</div>-->
+			<div class="auto-rate">
+				<div class="ranges">
+					<input class="ranges-item" type="text"></input>
+					<div class="renge-slider">
+						<div class="ui-slider-control"></div>
+					</div>
+				</div>
+				<div class="buttons">
+					<button>Фолд</button>
+					<div class="call">
+						<a href="">Колл:
+							<span><br>20$</span>
+						</a>
+					</div>
+					<div class="rez">
+						<a href="">Рейз до:
+							<span><br>60$</span>
+						</a>
+					</div>
+				</div>
+				<button id="combin">Комбинации</button>
+			</div>
+			
+		</div>
+	</body>
+</html>

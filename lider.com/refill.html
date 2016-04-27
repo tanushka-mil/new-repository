@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Balance</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
+    <link href="css/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="modal check-in" id="modal-check-in">
+      <div class="c-ccont">
+      <span></span>
+      <h3 class="col1">Регистраця</h3>
+          <form>
+            <div class="surname-field" >
+              <input type="text" placeholder="Ваша фамилия">
+            </div>
+            <div class="name-field" >
+              <input type="text" placeholder="Ваше имя">
+            </div>
+            <div class="patronymic-field" >
+              <input type="text" placeholder="Ваше отчество ">
+            </div>
+            <div class="email-field" >
+              <input type="email" placeholder="Ваш email">
+            </div>
+            <button class="bg1">Зарегестрироваться</button>
+          </form>
+      </div>
+    </div>
+    <div class="modal enter-item"  id="modal-enter-item">
+      <div class="c-ccont">
+      <span></span>
+          <form>
+            <div class="email-field" >
+              <input type="email" placeholder="Логин">
+            </div>
+            <div class="password-field" >
+              <input type="password" placeholder="Пароль">
+            </div>
+            <a href="">Забыли пароль</a>
+            <button class="bg1">Войти</button>
+          </form>
+      </div>
+    </div>
+    <div class="header-wrapper">
+        <div class="header-wrapper-item">
+            <div class="header-item">
+                <div class="logo-item">
+                    <a href="">ТСЖ «ЛИДЕР»</a>
+                </div>
+            </div>
+            <div class="main-menu-item">
+                <div class="menu-main">
+                    <ul>
+                        <li class="drop-down"><a href="">ГЛАВНАЯ</a>
+                            <ul class="drop-menu">
+                                <li class="drop-menu-item"><a href="#">ПРАВЛЕНИЕ</a></li>
+                                <li><a href="#">СОТРУДНИКИ </a></li>
+                                <li><a href="#">СЛУЖБЫ</a></li>
+                                <li><a href="#">КОНТАКТЫ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">НОВОСТИ</a></li>
+                        <li><a href="">ФОРУМ</a></li>
+                        <li><a href="">ИНФОРМАЦИЯ ТСЖ</a></li>
+                        <li><a href=""> ТАРИФЫ </a></li>
+                        <li><a href="">ГАЛЕРЕЯ</a></li>
+                        <li><a href="">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <div class="enter">
+                    <a id="enter" href="#">Вход</a>
+                     / 
+                    <a id="check-in" href="#">Регистрация</a> 
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="content-item">
+        <div class="content-header">
+            <div class="person">
+                <h2 class="col1">Личный кабинет</h2>
+                <a href="">Выйти</a>
+            </div>
+            <div class="name">
+                <div class="ava bg2"></div>
+                <div class="name-item">Имя Фамилия</div>
+            </div>
+        </div>
+        <div class="side-cont">
+            <div class="parts">
+                <a href="">ОПИСАНИЕ</a>
+                <a class="active" href="">БАЛАНС</a>
+                <a href="">ПЛАТЕЖИ</a>
+                <a href="">СЧЕТЧИКИ</a>
+                <a href="">ОБРАЩЕНИЯ</a>
+                <a href="">ИНФОРМАЦИЯ ТСЖ</a>
+                <a href="">НАСТРОЙКИ</a>
+            </div>
+            <div class="information refill">
+                <h3>Баланс</h3>
+                <a class="refill-item" href="">Пополнeние</a>
+                <div class="balance">2000 P</div>
+                <a href="">Смотреть все свои начисления</a>
+                <div id="tabs" class="paiments">
+                    <ul class="refills">
+                        <li class="refills-item choise">
+                            <a href="#tabs-1">
+                                <p class="card">
+                                    С банковской карты <br>
+                                    <span>Visa, MasterCard, Maestro</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="refills-item">
+                            <a href="#tabs-2">
+                                <p class="mobile">
+                                    С баланса мобильного<br>
+                                    <span>привязанного к кабинету</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="refills-item">
+                            <a href="#tabs-3">
+                                <p class="cash">
+                                    Наличными<br>
+                                    <span>в банках и других пунктах</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="refills-item min-tab">
+                            <a href="#tabs-4">
+                                <p class="webmomey">Электронными деньгами</p>      
+                            </a>
+                        </li>
+                        <a class="webmon" >WebMoney</a>
+                        <a class="yndex">Яндекс.Деньги</a>
+                    </ul>
+                    
+                    <div class="paiment" id="tabs-1">
+                        <div class="form-paiment">
+                            <input class="text-field" type="text" placeholder="Номер карты">
+                            <p class="valid">VALID THRU</p>
+                            <div class="form-card">
+                               <input class="m-field" type="text" placeholder="MM">
+                                / 
+                               <input class="m-field" type="text" placeholder="ГГ">
+                               <div class="num-card">Три цифры<br>с оборотной<br>стороны карты</div>
+                               <input class="cvc-field" type="text" placeholder="CVC">
+                            </div>
+                        </div>
+                        <div class="enter-mon">
+                            <input class="money-field" type="text" placeholder="Сумма Р">
+                            <p>Введите сумму пополнения</p>
+                        </div>
+                        <button class="more bg2">Пополнить</button>
+                    </div>
+                    <div class="paiment" id="tabs-2">
+                        Игра́ — вид осмысленной[1] непродуктивной деятельности, где мотив лежит как в её результате, так и в самом процессе[2]. Также термин «игра» используют для обозначения набора предметов или программ, предназначенных для подобной деятельности.Игра — форма деятельности в условных ситуациях, направленная на воссоздание и усвоение общественного опыта, фиксированного в социально закрепленных способах осуществления предметных действий, в предметах науки и культуры[3]. Создание типичных для профессии ситуаций и нахождение в них практических решений является стандартным для теории управления (деловые игры — моделирование производственной ситуации в целях выработки наиболее эффективных решений и профессиональных навыков) и военного дела (военные игры — решение практических задач на местности и по топографическим картам).
+                    </div>
+                    <div class="paiment" id="tabs-3">
+                        Игра́ — вид осмысленной[1] непродуктивной деятельности, где мотив лежит как в её результате, так и в самом процессе[2]. Также термин «игра» используют для обозначения набора предметов или программ, предназначенных для подобной деятельности.Игра — форма деятельности в условных ситуациях, направленная на воссоздание и усвоение общественного опыта, фиксированного в социально закрепленных способах осуществления предметных действий, в предметах науки и культуры[3]. Создание типичных для профессии ситуаций и нахождение в них практических решений является стандартным для теории управления (деловые игры — моделирование производственной ситуации в целях выработки наиболее эффективных решений и профессиональных навыков) и военного дела (военные игры — решение практических задач на местности и по топографическим картам).
+                    </div>
+                    <div class="paiment" id="tabs-4">
+                        Игра́ — вид осмысленной[1] непродуктивной деятельности, где мотив лежит как в её результате, так и в самом процессе[2]. Также термин «игра» используют для обозначения набора предметов или программ, предназначенных для подобной деятельности.Игра — форма деятельности в условных ситуациях, направленная на воссоздание и усвоение общественного опыта, фиксированного в социально закрепленных способах осуществления предметных действий, в предметах науки и культуры[3]. Создание типичных для профессии ситуаций и нахождение в них практических решений является стандартным для теории управления (деловые игры — моделирование производственной ситуации в целях выработки наиболее эффективных решений и профессиональных навыков) и военного дела (военные игры — решение практических задач на местности и по топографическим картам).
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg1">
+        <div class="footer-item">
+            <div class="form-question">
+                <h4>Вопросы? Заполните форму ниже и мы ответи</h4>
+                <form>
+                    <input type="text" placeholder="ФИО">
+                    <input type="tel" placeholder="Телефон">
+                    <textarea placeholder="Ваш вопрос"></textarea>
+                    <button class="send bg2">Отправить</button>
+                    <button>Очистить</button>
+                </form>
+            </div>
+            <div class="footer-menu">
+                <h4>Основное меню</h4>
+                <div class="parts">
+                  <a href="">ГЛАВНАЯ</a>
+                  <a href="">ПРАВЛЕНИЕ</a>
+                  <a href="">СОТРУДНИКИ</a>
+                  <a href="">СЛУЖБЫ</a>
+                </div>
+                <div class="parts">
+                  <a href="">НОВОСТИ</a>
+                  <a href="">ФОРУМ</a>
+                  <a href="">ИНФОРМАЦИЯ ТСЖ</a>
+                  <a href="">ТАРИФЫ</a>
+                </div>
+                <div class="parts">
+                  <a href="">ГАЛЕРЕЯ</a>
+                  <a href="">ФОТО</a>
+                  <a href="">ВИДЕО</a>
+                  <a href="">КОНТАКТЫ</a>
+                </div>
+                <div class="contacts">
+                    <a class="phone" href="">+7 (900) 800 50 50</a>
+                    <a class="mail" href="">lider-tszh@rambler.ru</a>
+                </div>
+            </div>
+        </div>
+        <p>© Все права защищены. ТСЖ Лидер 2015</p>
+    </footer>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
